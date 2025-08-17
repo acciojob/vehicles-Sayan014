@@ -21,6 +21,10 @@ public class Car extends Vehicle {
         this.currentGear = 1;
     }
 
+    public Car(String name, int wheels, int doors, int gears, boolean isManual, String type) {
+        this(name, wheels, doors, gears, isManual, type, 4); // Default 4 seats
+    }
+
     public void changeGear(int newGear) {
 
         this.currentGear = newGear;
